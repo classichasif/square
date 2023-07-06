@@ -1,0 +1,265 @@
+.cls__header_top{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    align-items: center;
+    padding: 14px 31px 14px 31px;
+    z-index: 1;
+    position: relative;
+    background: #A17C48;
+}
+
+.header_top_text {
+    font-family: 'Srisakdi', cursive;
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--global-color);
+}
+
+.cls__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cls__main_header {
+    background: var(--bg-color);
+    margin-top: -40px;
+    top: 40px;
+    z-index: 12;
+    width: 100%;
+    background-color: #f9f8f5;
+    height: 50px;
+    position: relative;
+}
+
+.cls__header_logo{
+    width: 110px;
+}
+
+.cls__nav{
+    flex: 1;
+}
+
+.cls__nav > ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cls__nav > ul > li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.cls__nav > ul > li > a{
+    font-size: 14px;
+    color: var(--text-color);
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    line-height: 50px;
+}
+
+.cls__mega_menu {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    left: 0px;
+    background: var(--global-color);
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 10%);
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.cls__nav > ul > li:hover .cls__mega_menu{
+    max-height: 1200px;
+}
+
+.cls__megha_content{
+    padding: 30px 50px;
+}
+
+.cls__megha_wrapper{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cls__megha_item{
+    position: relative;
+}
+
+.cls__padding_ten{
+    padding: 0px 10%;
+}
+
+.cls__padding_twenty{
+    padding: 0px 20%;
+}
+
+.cls__borderRight{
+    border-right: 1px solid rgb(25 25 25 / 10%);
+}
+
+.cls_megha_title {
+    font-size: 12px;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.cls__header_imgae_text {
+    font-size: 14px;
+    text-align: left;
+    line-height: 18px;
+    margin-top: 6px;
+    color: var(--text-color);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.cls__megha_inner_text{
+    font-size: 12px;
+    color: var(--text-color);
+    margin-top: 10px;
+}
+
+.cls__header_imgae_text:hover{
+    font-weight: 500;
+}
+
+.cls__megha_imgae:not(:last-child) {
+    margin-bottom: 12px;
+    display: block;
+}
+
+.cls__nav_block{
+    padding: 0px 10%;
+    margin-bottom: 25px;
+}
+
+.cls__p_0{
+    padding: 0px !important;
+}
+
+.cls__navblock_list{}
+
+.cls__navblock_list li a{
+    font-size: 12px;
+    color: var(--text-color);
+    margin-bottom: 4px;
+}
+
+.cls__header_search {
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.cls__search_icon i,
+.cls__search_text{
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.cls__search_icon i{
+    font-weight: 300;
+}
+
+.cls__header_right{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.cls__currency,
+.cls__profle{
+    position: relative;
+}
+
+.cls__defualt{
+    color: var(--primary-color);
+    font-size: 12px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.cls__defualt span i{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.cls__currency_dropdow,
+.cls__profle_dropdown {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    width: 100px;
+    min-width: max-content;
+    background: var(
+    --bg-color);
+    top: 32px;
+}
+
+.cls__currency.active .cls__currency_dropdow,
+.cls__profle_dropdown.active{
+    max-height: 320px;
+}
+
+.cls__currency_dropdow ul li,
+.cls__profle_dropdown ul li{
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.cls__profle_dropdown ul li a{
+    color: var(--text-color);
+}
+
+.cls__currency_dropdow ul li:not(:last-child),
+.cls__profle_dropdown ul li:not(:last-child){
+    border-bottom: 1px solid var(--global-color);
+}
+
+.cls__header_icon {
+    font-size: 18px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.cls__header_icon i{
+    font-weight: 300;
+}
+
+.cls__cartlist{
+    position: relative;
+}
+
+.cls__cartlist span {
+    height: 15px;
+    width: 15px;
+    color: var(--global-color);
+    background: var(--primary-color);
+    display: grid;
+    place-content: center;
+    font-size: 12px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+}
+
+
