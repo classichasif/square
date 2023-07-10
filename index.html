@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="assets/css/fontawesome.min.css">
         <!-- slick slider -->
         <link rel="stylesheet" href="assets/css/slick.css">
+        <link rel="stylesheet" href="assets/css/demo.css">
         <!-- css file link -->
         <link rel="stylesheet" href="assets/css/global.css">
         <link rel="stylesheet" href="assets/css/main.css">
@@ -39,6 +40,12 @@
             <div class="cls__main_header">
                 <div class="cls__container">
                     <div class="cls__wrapper">
+                        <!-- mobile toggler -->
+                        <div class="cls__mobile_toggle d-block d-lg-none">
+                            <a class="toggle d-block d-lg-none">
+                                <i class="fa-solid fa-bars"></i></span>
+                            </a>
+                        </div>
                         <!-- logo -->
                         <div class="cls__header_logo">
                             <a href="./index.html" class="cls__logo_image">
@@ -46,7 +53,7 @@
                             </a>
                         </div>
                         <!-- nav -->
-                        <div class="cls__nav">
+                        <div class="cls__nav d-none d-lg-block">
                             <ul>
                                 <li>
                                     <a href="">HOME</a>
@@ -682,11 +689,6 @@
                         </div>
                         <!-- header right -->
                         <div class="cls__header_right">
-                            <!-- header search -->
-                            <div class="cls__header_search">
-                                <span class="cls__search_icon"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
-                                <p class="cls__search_text">Search</p>
-                            </div>
                             <!-- currency -->
                             <div class="cls__currency" id="cls__currency">
                                 <div class="cls__defualt" id="cls__defualt_btn">
@@ -704,58 +706,547 @@
                                     </ul>
                                 </div>
                             </div>
-                            
-                            <!-- profile -->
-                            <div class="cls__profle">
-                                <!-- icon -->
-                                <div id="cls__profile_btn">
-                                    <a href="#" class="cls__header_icon"><i class="fa-solid fa-user"></i></a>
+    
+                            <div class="cls__sub_nav">
+                                <!-- header search -->
+                                <div class="cls__header_search">
+                                    <span class="cls__search_icon"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
                                 </div>
-                                <!-- profile dropdown -->
-                                <div class="cls__profle_dropdown" id="cls__profle_dropdown">
-                                    <ul class="cls__profile_list">
-                                        <li>
-                                            <a href="">Track Order</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Good Earth Registry</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Activate Gift Card</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Cerise Program</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Check Balance</a>
-                                        </li>
-                                        <li>
-                                            <a href="">Login</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <!-- wish list -->
-                            <div class="cls__wishlist">
-                                <!-- icon -->
-                                <a href="#" class="cls__header_icon"><i class="fa-solid fa-heart"></i></a>
-                            </div>
-                            
-                            <!-- wish list -->
-                            <div class="cls__cartlist">
-                                <!-- icon -->
-                                <a href="#" class="cls__header_icon"><i class="fa-sharp fa-solid fa-bag-shopping"></i></a>
-                                <span>5</span>
-                            </div>
 
+                                <!-- profile -->
+                                <div class="cls__profle">
+                                    <!-- icon -->
+                                    <div id="cls__profile_btn">
+                                        <a href="#" class="cls__header_icon"><i class="fa-solid fa-user"></i></a>
+                                    </div>
+                                    <!-- profile dropdown -->
+                                    <div class="cls__profle_dropdown" id="cls__profle_dropdown">
+                                        <ul class="cls__profile_list">
+                                            <li>
+                                                <a href="">Track Order</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Good Earth Registry</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Activate Gift Card</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Cerise Program</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Check Balance</a>
+                                            </li>
+                                            <li>
+                                                <a href="">Login</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                
+                                <!-- wish list -->
+                                <div class="cls__wishlist">
+                                    <!-- icon -->
+                                    <a href="#" class="cls__header_icon"><i class="fa-solid fa-heart"></i></a>
+                                </div>
+
+                                <!-- wish list -->
+                                <div class="cls__cartlist">
+                                    <!-- icon -->
+                                    <button class="cls__header_icon cls__btn" id="cls_header_cart"><i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
+                                    <span>5</span>
+                                </div>
+                            </div>
                         </div>
-                        <!--  -->
+                        <!-- header right end -->
+                    </div>
+                </div>
+            </div>
+            <!-- mobile nav -->
+            <div class="wrapper cf">
+                <nav id="main-nav">
+                  <ul class="second-nav">
+                    <li class="emptyli"></li>
+                    <li class="devices">
+                      <span>HOME</span>
+                      <ul>
+                        <li class="mobile">
+                          <a href="#">Mobile Phones</a>
+                          <ul>
+                            <li><a href="#">Super Smart Phone</a></li>
+                            <li><a href="#">Thin Magic Mobile</a></li>
+                            <li><a href="#">Performance Crusher</a></li>
+                            <li><a href="#">Futuristic Experience</a></li>
+                          </ul>
+                        </li>
+      
+                        <li class="television">
+                          <a href="#">Televisions</a>
+                          <div class="subnav-container">
+                            <ul>
+                              <li><a href="#">Flat Superscreen</a></li>
+                              <li><a href="#">Gigantic LED</a></li>
+                              <li><a href="#">Power Eater</a></li>
+                              <li><a href="#">3D Experience</a></li>
+                              <li><a href="#">Classic Comfort</a></li>
+                            </ul>
+                          </div>
+                        </li>
+      
+                        <li class="camera">
+                          <a href="#">APPAREL</a>
+                          <ul>
+                            <li><a href="#">Smart Shot</a></li>
+                            <li><a href="#">Power Shooter</a></li>
+                            <li><a href="#">Easy Photo Maker</a></li>
+                            <li><a href="#">Super Pixel</a></li>
+                          </ul>
+                        </li>
+      
+                      </ul>
+                    </li>
+                    <li class="devices">
+                      <span>APPAREL</span>
+                      <ul>
+                        <li class="mobile">
+                          <a href="#">Mobile Phones</a>
+                          <ul>
+                            <li><a href="#">Super Smart Phone</a></li>
+                            <li><a href="#">Thin Magic Mobile</a></li>
+                            <li><a href="#">Performance Crusher</a></li>
+                            <li><a href="#">Futuristic Experience</a></li>
+                          </ul>
+                        </li>
+      
+                        <li class="television">
+                          <a href="#">Televisions</a>
+                          <div class="subnav-container">
+                            <ul>
+                              <li><a href="#">Flat Superscreen</a></li>
+                              <li><a href="#">Gigantic LED</a></li>
+                              <li><a href="#">Power Eater</a></li>
+                              <li><a href="#">3D Experience</a></li>
+                              <li><a href="#">Classic Comfort</a></li>
+                            </ul>
+                          </div>
+                        </li>
+      
+                        <li class="camera">
+                          <a href="#">APPAREL</a>
+                          <ul>
+                            <li><a href="#">Smart Shot</a></li>
+                            <li><a href="#">Power Shooter</a></li>
+                            <li><a href="#">Easy Photo Maker</a></li>
+                            <li><a href="#">Super Pixel</a></li>
+                          </ul>
+                        </li>
+      
+                      </ul>
+                    </li>
+                    <li class="devices">
+                      <span>GIFTING</span>
+                      <ul>
+                        <li class="mobile">
+                          <a href="#">Mobile Phones</a>
+                          <ul>
+                            <li><a href="#">Super Smart Phone</a></li>
+                            <li><a href="#">Thin Magic Mobile</a></li>
+                            <li><a href="#">Performance Crusher</a></li>
+                            <li><a href="#">Futuristic Experience</a></li>
+                          </ul>
+                        </li>
+      
+                        <li class="television">
+                          <a href="#">Televisions</a>
+                          <div class="subnav-container">
+                            <ul>
+                              <li><a href="#">Flat Superscreen</a></li>
+                              <li><a href="#">Gigantic LED</a></li>
+                              <li><a href="#">Power Eater</a></li>
+                              <li><a href="#">3D Experience</a></li>
+                              <li><a href="#">Classic Comfort</a></li>
+                            </ul>
+                          </div>
+                        </li>
+      
+                        <li class="camera">
+                          <a href="#">APPAREL</a>
+                          <ul>
+                            <li><a href="#">Smart Shot</a></li>
+                            <li><a href="#">Power Shooter</a></li>
+                            <li><a href="#">Easy Photo Maker</a></li>
+                            <li><a href="#">Super Pixel</a></li>
+                          </ul>
+                        </li>
+      
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+            </div>
+            <!-- cart menu -->
+            <div class="cls__cart_menu">
+                <!-- cart menu content -->
+                <div class="cls__cartmenu_content">
+                    <div class="cls__cartmenu_wrapper">
+                        <!-- cart menu header -->
+                        <div class="cls__cartmenu_header">
+                            <div class="d-flex align-items-center justify-content-between w-100">
+                                <h2 class="cls__cartmenu_title">MINI BAG</h2>
+                                <p class="cls__cartmenu_count">0 item(s) in bag</p>
+                                <button class="cls__close_btn cls__btn">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- cart menu body -->
+                        <div class="cls__cartmenu_body">
+                            <p class="cls__cartmenu_empty">No items added to bag.</p>
+                            <!-- item -->
+                            <div class="cls__cartmenu_item">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <!-- image -->
+                                    <div class="cls__cartmeitem_image">
+                                        <img src="assets/image/minbag/I00249625-1684751105.jpg" alt="">
+                                    </div>
+                                    <!-- content -->
+                                    <div class="cls__cartmeitem_content">
+                                        <!-- top -->
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <!-- left -->
+                                            <div class="cls__cartmeitem_left">
+                                                <h4 class="cls__cartitem_title">Set Of 7- Indus Tea Service</h4>
+                                                <p class="cls__cartitem_price">$ <span>455</span></p>
+                                            </div>
+                                            <!-- cross btn -->
+                                            <button class="cls__cartmeitem_cross cls__btn">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <!-- bottom -->
+                                        <div class="d-flex justify-content-between align-items-start mt-3">
+                                            <!-- left -->
+                                            <div class="cls__cartmeitem_left">
+                                                <h4 class="cls__cartitem_size">Size: 1000 ML</h4>
+                                                <!-- product quantity -->
+                                                <div class="cls__product_quantity">
+                                                    <span class="cls__product_btn decress__btn">-</span>
+                                                    <input class="cls__product_input" value="0" type="number" disabled>
+                                                    <span class="cls__product_btn incress__btn">+</span>
+                                                </div>
+                                            </div>
+                                            <!-- cross btn -->
+                                            <button class="cls__cartmeitem_wish cls__btn">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="cls__cartmenu_item">
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <!-- image -->
+                                    <div class="cls__cartmeitem_image">
+                                        <img src="assets/image/minbag/I00253527-1681126675.jpg" alt="">
+                                    </div>
+                                    <!-- content -->
+                                    <div class="cls__cartmeitem_content">
+                                        <!-- top -->
+                                        <div class="d-flex justify-content-between align-items-start">
+                                            <!-- left -->
+                                            <div class="cls__cartmeitem_left">
+                                                <h4 class="cls__cartitem_title">Set Of 7- Indus Tea Service</h4>
+                                                <p class="cls__cartitem_price">$ <span>455</span></p>
+                                            </div>
+                                            <!-- cross btn -->
+                                            <button class="cls__cartmeitem_cross cls__btn">
+                                                <i class="fa-solid fa-xmark"></i>
+                                            </button>
+                                        </div>
+                                        <!-- bottom -->
+                                        <div class="d-flex justify-content-between align-items-start mt-3">
+                                            <!-- left -->
+                                            <div class="cls__cartmeitem_left">
+                                                <h4 class="cls__cartitem_size">Size: 1000 ML</h4>
+                                                <!-- product quantity -->
+                                                <div class="cls__product_quantity">
+                                                    <span class="cls__product_btn decress__btn">-</span>
+                                                    <input class="cls__product_input" value="0" type="number" disabled>
+                                                    <span class="cls__product_btn incress__btn">+</span>
+                                                </div>
+                                            </div>
+                                            <!-- cross btn -->
+                                            <button class="cls__cartmeitem_wish cls__btn">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- card menu footer -->
+                        <div class="cls__cartmenu_footer">
+                            <!-- top -->
+                            <div class="cls__cartmenu_footer_top d-flex align-items-center justify-content-between">
+                                <p class="cls__cartmenu_total">TOTAL*</p>
+                                <p class="cls__cartmenu_amount text-end">
+                                    $ <span>0.00</span>
+                                    <span class="d-block cls__cartmenu_note">*Excluding estimated cost of shipping</span>
+                                </p>
+                            </div>
+                            <!-- view cart page -->
+                            <div class="cls__cartmenu_view">
+                                <a href="" class="d-flex justify-content-evenly align-items-center">
+                                    <span><i class="fa-sharp fa-solid fa-bag-shopping"></i></span>
+                                    <p>VIEW SHOPPING BAG</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
         <!-- header section end -->
+
+        <!-- main start -->
+        <main class="cls__main">
+            <!-- banner slider -->
+            <section class="cls__banner_slider">
+                <div class="cls__banner_wrapper">
+                    <!-- banner item -->
+                    <a href="" class="cls__banner_item">
+                        <img src="assets/image/banner/Palmerai_Banner.jpg" alt="">
+                    </a>
+                    <!-- banner item -->
+                    <a href="" class="cls__banner_item">
+                        <img src="assets/image/banner/Shiraz_Banner.jpg" alt="">
+                    </a>
+                    <!-- banner item -->
+                    <a href="" class="cls__banner_item">
+                        <img src="assets/image/banner/new2.webp" alt="">
+                    </a>
+                </div>
+                <div class="slideroffer_arrow"></div>
+            </section>
+            <!-- baner slider end -->
+
+            <!-- trending section start-->
+            <section class="cls__trending_section section_padding">
+                <!-- rending section shape -->
+                <div class="cls__trending_shape1">
+                    <img src="assets/image/tremding/leftshape.png" alt="">
+                </div>
+                <div class="cls__trending_shape2">
+                    <img src="assets/image/tremding/rightshape.png" alt="">
+                </div>
+                <!-- container -->
+                <div class="cls__container">
+                    <!-- trending wrapper -->
+                    <div class="cls__trending_wrapper">
+                        <!-- first item -->
+                        <a href="" class="cls__trending_first_item">
+                            <!-- trending image -->
+                            <div class="cls__trending_item_image">
+                                <img src="assets/image/tremding/075b2d65-fd51-45ba-8f6a-e822a2ec659c.jpg" alt="">
+                            </div>
+                             <!-- trending content -->
+                             <div class="cls__trending_item_content">
+                                <p class="cls__trending_item_name">SHOP GLASSES</p>
+                            </div>
+                        </a>
+
+                        <!-- trending item -->
+                        <a href="" class="cls__trending_item">
+                            <!-- trending image -->
+                            <div class="cls__trending_item_image">
+                                <img src="assets/image/tremding/final2.jpg" alt="">
+                            </div>
+                            <!-- trending content -->
+                            <div class="cls__trending_item_content">
+                                <p class="cls__trending_item_name">EXPLORE VASES</p>
+                            </div>
+                        </a>
+                        <!-- trending item -->
+                        <a href="" class="cls__trending_item">
+                            <!-- trending image -->
+                            <div class="cls__trending_item_image">
+                                <img src="assets/image/tremding/final3.jpg" alt="">
+                            </div>
+                            <!-- trending content -->
+                            <div class="cls__trending_item_content">
+                                <p class="cls__trending_item_name">DISCOVER GLASSES</p>
+                            </div>
+                        </a>
+                        <!-- trending item -->
+                        <a href="" class="cls__trending_item">
+                            <!-- trending image -->
+                            <div class="cls__trending_item_image">
+                                <img src="assets/image/tremding/I00205651_S-1662462676_copy.jpg" alt="">
+                            </div>
+                            <!-- trending content -->
+                            <div class="cls__trending_item_content">
+                                <p class="cls__trending_item_name">BROWSE SERVEWARE</p>
+                            </div>
+                        </a>
+                        <!-- trending item -->
+                        <a href="" class="cls__trending_item">
+                            <!-- trending image -->
+                            <div class="cls__trending_item_image">
+                                <img src="assets/image/tremding/PRAN3112.jpg" alt="">
+                            </div>
+                            <!-- trending content -->
+                            <div class="cls__trending_item_content">
+                                <p class="cls__trending_item_name">SHOP TEA & COFFEE SETS</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- trending section end-->
+
+            <!-- category section -->
+            <section class="cls__category_section section_padding">
+                <!-- container -->
+                <div class="cls__container">
+                    <!-- section title -->
+                    <div class="cls__section_title">
+                        <h2 class="cls__section_heading">favorite <span>for</span> every <span>season</span></h2>
+                    </div>
+                    <!-- category content -->
+                    <div class="cls__category_content">
+                        <!-- category slider -->
+                        <div class="cls__category_slider">
+                            <!-- category slider item -->
+                            <a href="" class="cls__categoryslider_item">
+                                <!-- cls__categoty_image -->
+                                <div class="cls__categoty_image">
+                                    <img src="assets/image/category/1114b4c6-45dd-4717-8d90-75c1ae1c6108.png" alt="">
+                                </div>
+                                <!-- cls__categoty_title -->
+                                <p class="cls__categoty_title">DINGING</p>
+                            </a>
+                            <!-- category slider item -->
+                            <a href="" class="cls__categoryslider_item">
+                                <!-- cls__categoty_image -->
+                                <div class="cls__categoty_image">
+                                    <img src="assets/image/category/215353eb-fd55-402a-88c0-84cf7691d5da.png" alt="">
+                                </div>
+                                <!-- cls__categoty_title -->
+                                <p class="cls__categoty_title">DRINKWARE & BAR</p>
+                            </a>
+                            <!-- category slider item -->
+                            <a href="" class="cls__categoryslider_item">
+                                <!-- cls__categoty_image -->
+                                <div class="cls__categoty_image">
+                                    <img src="assets/image/category/7a344ad5-a660-4182-83b5-47ca696ff9aa.png" alt="">
+                                </div>
+                                <!-- cls__categoty_title -->
+                                <p class="cls__categoty_title">SPA</p>
+                            </a>
+                            <!-- category slider item -->
+                            <a href="" class="cls__categoryslider_item">
+                                <!-- cls__categoty_image -->
+                                <div class="cls__categoty_image">
+                                    <img src="assets/image/category/8b689392-88c9-45da-8f15-2842c9dd472c.png" alt="">
+                                </div>
+                                <!-- cls__categoty_title -->
+                                <p class="cls__categoty_title">TEXTILES</p>
+                            </a>
+                            <!-- category slider item -->
+                            <a href="" class="cls__categoryslider_item">
+                                <!-- cls__categoty_image -->
+                                <div class="cls__categoty_image">
+                                    <img src="assets/image/category/b736b68b-2d00-44b3-8fef-1b1de973f156.png" alt="">
+                                </div>
+                                <!-- cls__categoty_title -->
+                                <p class="cls__categoty_title">DECOR</p>
+                            </a>
+                        </div>
+                        <div class="slidtrending_arrow"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- category section end -->
+
+            <!-- banner section start -->
+            <section class="section_padding cls__banner_add">
+                <div class="cls__banneradd_image">
+                    <img src="assets/image/4bce59cc-63f0-41a9-89b7-e4451e72714a.jpg" alt="">
+                </div>
+                <a href="" class="cls__banneradd_box">
+                    <h1 class="cls__banneradd_title"><span>Breezy</span> BASICS</h1>
+                    <p class="cls__banneradd_text">Handwoven fabrics in relaxed cuts and cool tones for balmy days</p>
+                    <p class="cls__banneradd_link">DISCOVER ROZONA</p>
+                </a>
+            </section>
+            <!-- banner section start end -->
+
+            <!-- daily package -->
+            <section class="cls__daily_package section_padding">
+                <!-- container -->
+                <div class="cls__container">
+                    <!-- section title -->
+                    <div class="cls__section_title">
+                        <h2 class="cls__section_heading"> <span>Everyday</span>  WELLNESS</h2>
+                        <p class="cls__section_text">Age-old rituals that nourish the body from within</p>
+                    </div>
+                    <!-- wrapper -->
+                    <div class="cls__daily_pcakge_wrapper">
+                        <!-- item -->
+                        <div class="cls__daily_pcakge_item">
+                            <!-- image -->
+                            <div class="cls__daily_pcakge_image">
+                                <img src="assets/image/daily/10824a6f-a49a-4d5e-82f3-711495c83abf.jpg" alt="">
+                            </div>
+                            <!-- title -->
+                            <p class="cls__categoty_title">DISCOVER HONEY</p>
+                        </div>
+                        <div class="cls__daily_pcakge_item">
+                            <!-- image -->
+                            <div class="cls__daily_pcakge_image">
+                                <img src="assets/image/daily/226e91e4-604e-4aff-8239-16f4ff951455.jpg" alt="">
+                            </div>
+                            <!-- title -->
+                            <p class="cls__categoty_title">EXPLORE SKINCARE</p>
+                        </div>
+                        <div class="cls__daily_pcakge_item">
+                            <!-- image -->
+                            <div class="cls__daily_pcakge_image">
+                                <img src="assets/image/daily/301d5ef3-16c3-4618-88e5-2b2cd27a138c.jpg" alt="">
+                            </div>
+                            <!-- title -->
+                            <p class="cls__categoty_title">SHOP DHUNA</p>
+                        </div>
+                        <div class="cls__daily_pcakge_item">
+                            <!-- image -->
+                            <div class="cls__daily_pcakge_image">
+                                <img src="assets/image/daily/6a7fe95e-397a-4293-8e07-5e9a4b0fe907.jpg" alt="">
+                            </div>
+                            <!-- title -->
+                            <p class="cls__categoty_title">BROWSE COPPERWARE</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- daily package end -->
+
+            
+            <!-- banner section start -->
+            <section class="cls__banner_add">
+                <div class="cls__banneradd_image">
+                    <img src="assets/image/1777ec0d-4717-489a-8130-7d553c907aa322.jpg" alt="">
+                </div>
+                <a href="" class="cls__banneradd_box cls__banneradd_boxTwo">
+                    <h1 class="cls__banneradd_title"><span>SKINCARE</span> SIMPLEFIED</h1>
+                    <p class="cls__banneradd_text">A lush bath and body line designed for a joyful everyday routine </p>
+                    <p class="cls__banneradd_link">DISCOVER COCO LOCO</p>
+                </a>
+            </section>
+            <!-- banner section start end -->
+
+        </main>
+        <!-- main end -->
 
         <!-- jquery link -->
         <script src="assets/js/jquery.min.js"></script>
@@ -763,6 +1254,8 @@
         <script src="assets/js/bootstrap.bundle.min.js"></script>`
         <!-- slick slider -->
         <script src="assets/js/slick.min.js"></script>
+        <!-- mobile nav -->
+        <script src="assets/js/hc-offcanvas-nav.js"></script>
         <!-- main js -->
         <script src="assets/js/app.js"></script>
     </body>
