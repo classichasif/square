@@ -200,7 +200,7 @@ window.addEventListener('scroll', function () {
       Nav.update(settings);
     }
   };
-
+  
   $('.actions').find('a').on('click', function(e) {
     e.preventDefault();
 

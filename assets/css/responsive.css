@@ -1,7 +1,42 @@
+/* 400 */ 
+@media(min-width: 400px){
+    .section_padding{
+        padding: 40px 0px;
+    }
+
+    .cls__footer_wrapper {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .cls__trending_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .cls__trending_first_item{
+        grid-column: span 2;
+        grid-row: span 2;
+    }
+
+    .cls__daily_pcakge_wrapper{
+        gap: 24px;
+    }
+
+    .cls__daily_pcakge_item{
+        width: calc(50% - 12px);
+    }
+}
 /* 576 */ 
 @media(min-width: 576px){
     .section_padding{
         padding: 40px 0px;
+    }
+
+    .cls__footer_wrapper {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .cls__cartmenu_content{
+        width: 350px;
     }
 }
 
@@ -10,7 +45,6 @@
     .section_padding{
         padding: 50px 0px;
     }
-
     
     .cls__banner_add {
         background: transparent;
@@ -34,6 +68,17 @@
     
     .cls__banneradd_text{
         font-size: 18px;
+    }
+
+    .cls__footer_wrapper {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    .cls__trending_wrapper{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .cls__banneradd_boxTwo {
+        right: 100px;
     }
 }
 
@@ -65,7 +110,37 @@
         font-size: 19px;
         margin-top: 30px;
     }
-    
+
+    .cls__sub_nav{
+        display: flex;
+        gap: 24px;
+        position: unset;
+        background: transparent;
+        width: auto;
+        height: auto;
+    }
+
+    .cls__profle,
+    .cls__home,
+    .cls__wishlist,
+    .cls__cartlist,
+    .cls__header_search{
+        position: relative;
+        width: auto;
+    }
+
+   .cls__profle_dropdown {
+        top: 32px;
+        bottom: auto;
+    }
+
+    .cls__daily_pcakge_wrapper{
+        gap: 50px;
+    }
+
+    .cls__daily_pcakge_item {
+        width: calc(25% - 38px);
+    }
 }
 
 /* 1240 */
@@ -84,4 +159,12 @@
     .cls__banneradd_text{
         font-size: 24px;
     }
+
+    .cls__footer_wrapper {
+        grid-template-columns: repeat(5, auto);
+    }
+    .cls__footer_content{
+        background-image: url(../image/footer/Footer-Tangier1.jpg);
+    }
+    
 }

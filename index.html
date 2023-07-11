@@ -712,12 +712,11 @@
                                 <div class="cls__header_search">
                                     <span class="cls__search_icon"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></span>
                                 </div>
-
                                 <!-- profile -->
                                 <div class="cls__profle">
                                     <!-- icon -->
                                     <div id="cls__profile_btn">
-                                        <a href="#" class="cls__header_icon"><i class="fa-solid fa-user"></i></a>
+                                        <a class="cls__header_icon"><i class="fa-solid fa-user"></i></a>
                                     </div>
                                     <!-- profile dropdown -->
                                     <div class="cls__profle_dropdown" id="cls__profle_dropdown">
@@ -743,18 +742,21 @@
                                         </ul>
                                     </div>
                                 </div>
-                                
+                                <div class="cls__home d-lg-none">
+                                    <span class="cls__home_icon"><i class="fa-sharp fa-solid fa-house"></i></span>
+                                </div>
                                 <!-- wish list -->
                                 <div class="cls__wishlist">
                                     <!-- icon -->
                                     <a href="#" class="cls__header_icon"><i class="fa-solid fa-heart"></i></a>
                                 </div>
-
                                 <!-- wish list -->
                                 <div class="cls__cartlist">
-                                    <!-- icon -->
-                                    <button class="cls__header_icon cls__btn" id="cls_header_cart"><i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
-                                    <span>5</span>
+                                    <div class="position-relative d-inline-block">
+                                        <!-- icon -->
+                                        <button class="cls__header_icon cls__btn" id="cls_header_cart"><i class="fa-sharp fa-solid fa-bag-shopping"></i></button>
+                                        <span>5</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1020,10 +1022,6 @@
                     </a>
                     <!-- banner item -->
                     <a href="" class="cls__banner_item">
-                        <img src="assets/image/banner/Shiraz_Banner.jpg" alt="">
-                    </a>
-                    <!-- banner item -->
-                    <a href="" class="cls__banner_item">
                         <img src="assets/image/banner/new2.webp" alt="">
                     </a>
                 </div>
@@ -1048,7 +1046,7 @@
                         <a href="" class="cls__trending_first_item">
                             <!-- trending image -->
                             <div class="cls__trending_item_image">
-                                <img src="assets/image/tremding/075b2d65-fd51-45ba-8f6a-e822a2ec659c.jpg" alt="">
+                                <img src="assets/image/1777ec0d-4717-489a-8130-7d553c907aa322.jpg" alt="">
                             </div>
                              <!-- trending content -->
                              <div class="cls__trending_item_content">
@@ -1231,7 +1229,6 @@
             </section>
             <!-- daily package end -->
 
-            
             <!-- banner section start -->
             <section class="cls__banner_add">
                 <div class="cls__banneradd_image">
@@ -1244,14 +1241,233 @@
                 </a>
             </section>
             <!-- banner section start end -->
-
         </main>
         <!-- main end -->
+
+        <!-- footer section -->
+        <footer class="cls__footer_section">
+            <!-- footer newsletter -->
+            <div class="cls__newsletter">
+                <!-- container -->
+                <div class="cls__container">
+                    <!-- title -->
+                    <h4 class="cls__newsletter_title">BE IN THE KNOW</h4>
+                    <!-- text -->
+                    <p class="cls__newsletter_text">By signing up for alerts, you agree to receive e-mails, calls and text messages from Goodearth. To know more how we keep your data safe, refer to our Privacy Policy</p>
+                    <!-- form -->
+                    <form action="" class="cls__newsltter_form">
+                        <div class="cls__newsletter_inner">
+                            <input class="cls__input" type="email" placeholder="Enter Email Address">
+                            <span class="cls__input_btn"><i class="fa-sharp fa-solid fa-caret-right"></i></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- footer wrapper -->
+            <div class="cls__footer_content">
+                <!-- container -->
+                <div class="cls__container">
+                    <!-- footer wrapper -->
+                    <div class="cls__footer_wrapper">
+                        <!-- item -->
+                        <div class="cls__footer_item">
+                            <h5 class="cls__footer_navtitle">CONNECT</h5>
+                            <ul class="cls__footer_nav">
+                                <li>
+                                    <a href="mailto:square@gmail.com">
+                                        <span class="cls__footer_icon"><i class="fa-sharp fa-solid fa-envelope"></i></span>
+                                        <span class="cls__footer_text">square@gmail.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+91 7669303665">
+                                        <span class="cls__footer_icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                        <span class="cls__footer_text">+91 7669303665</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <span class="cls__footer_text">Uttora Sector 9, Road No 3/D, House No 30</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Monday - Saturday</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">9:30 am - 5:30 pm IST</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <!-- social icons -->
+                            <div class="cls__footer_social">
+                                <ul>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="cls__footer_item">
+                            <h5 class="cls__footer_navtitle">ABOUT US</h5>
+                            <ul class="cls__footer_nav">
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Press</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Career</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- item -->
+                        <div class="cls__footer_item">
+                            <h5 class="cls__footer_navtitle">SERVICES</h5>
+                            <ul class="cls__footer_nav">
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Cerise Program</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Shop & Cafe Locator</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Shop Experience</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Corporate Gifting</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Gift Card</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Activate Gift Card</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Good Earth Registry</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- item -->
+                        <div class="cls__footer_item">
+                            <h5 class="cls__footer_navtitle">SERVICES</h5>
+                            <ul class="cls__footer_nav">
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Cerise Program</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Shop & Cafe Locator</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Shop Experience</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Corporate Gifting</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Gift Card</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Activate Gift Card</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Good Earth Registry</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- item -->
+                        <div class="cls__footer_item">
+                            <h5 class="cls__footer_navtitle">HELP</h5>
+                            <ul class="cls__footer_nav">
+                                
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Safety Measures</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Shipping & Payment</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Track Order</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Return & Exchanges</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Terms Of Use</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer section end -->
 
         <!-- jquery link -->
         <script src="assets/js/jquery.min.js"></script>
         <!-- bootstrap js -->
-        <script src="assets/js/bootstrap.bundle.min.js"></script>`
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
         <!-- slick slider -->
         <script src="assets/js/slick.min.js"></script>
         <!-- mobile nav -->
