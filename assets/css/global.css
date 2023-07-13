@@ -126,3 +126,24 @@ img{
     color: var(--text-color);
     font-weight: 300;
 }
+
+.cls__banneradd_image {
+    height: 1000px;
+}
+
+.cls__banneradd_image img{
+    height: 100%;
+}
+
+.cls__banner_item{
+    width: 100%;
+    height: 800px;
+}
+
+.cls__banner_item img{
+    height: 100%;
+}
+
+.cls__categoty_image img{
+    border-radius: 50%;
+}

@@ -141,6 +141,9 @@
     .cls__daily_pcakge_item {
         width: calc(25% - 38px);
     }
+    .cls__filter_side{
+        height: 100vh;
+    }
 }
 
 /* 1240 */
@@ -166,5 +169,19 @@
     .cls__footer_content{
         background-image: url(../image/footer/Footer-Tangier1.jpg);
     }
+
+    .cls__filter_side{
+        width: 400px;
+        position: sticky;
+        top: 100px;
+        background: transparent;
+        height: auto !important;
+        z-index: auto;
+        padding: 0px;
+        overflow-y: unset;
+    }
     
+    .cls__filter_content {
+        width: calc(100% - 424px);
+    }
 }
