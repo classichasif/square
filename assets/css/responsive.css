@@ -122,6 +122,10 @@
     .product_page_content{
         width: 50%;
     }
+
+    .product_page_content{
+        padding: 30px 30px;
+    }
 }
 
 /* 1024 */
