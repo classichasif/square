@@ -26,7 +26,7 @@
     background: var(--bg-color);
     margin-top: -40px;
     top: 40px;
-    z-index: 12;
+    z-index: 999;
     width: 100%;
     background-color: #f9f8f5;
     min-height: 50px;
@@ -156,6 +156,7 @@
     color: var(--primary-color);
     font-size: 18px;
     font-weight: 300;
+    cursor: pointer;
 }
 
 .cls__header_right{
@@ -1094,7 +1095,7 @@
 }
 
 .cls__filter_side{
-    width: 400px;
+    width: 100%;
     position: fixed;
     top: 0px;
     left: -100%;
@@ -1142,6 +1143,11 @@
     width: 29px;
 }
 
+.activeGrid .product__viewBtn_line:before {
+    background: #000;
+    box-shadow: 13px 0 0 #000,13px 0 0 #000;
+}
+
 .product__viewBtn_line:before {
     content: "";
     position: absolute;
@@ -1163,8 +1169,19 @@
     box-shadow: 13px 0 0 #878787,26px 0 0 #878787;
 }
 
+.activeGridThree .product__viewBtn_line:before {
+    background: #000;
+    box-shadow: 13px 0 0 #000,26px 0 0 #000;
+}
+
 .three__line .product__viewBtn_line::before{
     box-shadow: 13px 0 0 #878787,26px 0 0 #878787,39px 0 0 #878787;
+}
+
+
+.activeGridFour .product__viewBtn_line:before {
+    background: #000;
+    box-shadow: 13px 0 0 #000,26px 0 0 #000,39px 0 0 #000;
 }
 
 .three__line {
@@ -1192,7 +1209,7 @@
 
 .cls__filterproduct_wrapper{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 24px;
 }
 
@@ -1237,8 +1254,9 @@
     transform: scale(1.2);
 }
 
-.cls__product_hover_image img{
+.cls__product_hover_image img {
     object-fit: cover;
+    height: 100%;
 }
 
 .cls__productfil_btn {
@@ -1349,12 +1367,12 @@
     position: relative;
 }
 
-.cls_modal_thumb_image{
+.cls_modal_thumb_image {
     height: 100%;
+    overflow: hidden;
 }
 
 .cls_modal_thumb_image img{
-    height: 100%;
     object-fit: cover;
 }
 
@@ -1533,4 +1551,148 @@
     .modal-content {
         height: auto;
     }
+}
+
+/* produc page */
+
+.product__page_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: var(--global-color);
+    flex-direction: column;
+}
+
+.prodcut_grid_thumb,
+.product_page_content{
+    width: 100%;
+}
+
+.product_grid_wrapper{
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.product_grid_image{
+    width: calc(50% - 6px);
+    max-height: 580px;
+}
+
+.product_grid_image{
+    max-height: 100%;
+}
+
+.zoomContainer{
+    z-index: 2 !important;
+}
+
+.product_page_content {
+    padding: 30px 30px;
+    background: var(--global-color);
+}
+
+.product_byeBtn {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    max-width: 322px;
+    width: 100%;
+    background: var(--primary-color);
+    line-height: 20px;
+    padding: 5px 0px;
+    color: var(--global-color);
+    margin-top: 10px;
+    transition: var(--transition);
+}
+
+.product_byeBtn:hover,
+.cls__modal_addBtn:hover{
+    background: var(--text-color);
+}
+
+.purches_note{
+    margin-top: 20px;
+}
+
+.purches_note ul li{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+}
+
+.purches_note ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.product_accordion .accordion-item {
+    border: 1px solid #f9f8f5;
+    border-radius: unset;
+}
+
+.product_accordion .accordion-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.product_accordion .accordion-button {
+    background: var(--bg-color);
+    padding: 10px !important;
+    font-size: 14px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+.product_accordion .accordion-button:not(.collapsed){
+    box-shadow: unset;
+}
+
+.product_accordion .accordion-button:focus{
+    box-shadow: unset;
+}
+
+.product_accordion .accordion-button::after{
+    box-shadow: unset;
+}
+
+.product_accordion .accordion-body{
+    padding: 30px;
+}
+
+.ratting{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.ratting li{
+    color: #ffb301;
+}
+
+.review_item:not(:last-child) {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.reveiw_title{
+    font-weight: 600;
+    color: #222;
+    margin: 5px 0px;
+}
+
+.reveiw_name {
+    color: var(--text-color);
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.reveiw_comment {
+    font-size: 13px;
+    color: var(--text-color);
+    font-weight: 500;
 }
