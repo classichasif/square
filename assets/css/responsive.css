@@ -5,7 +5,7 @@
     }
 
     .cls__footer_wrapper {
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .cls__trending_wrapper{
@@ -60,7 +60,7 @@
     }
 
     .cls__footer_wrapper {
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .cls__cartmenu_content{
@@ -74,6 +74,14 @@
 
     .profile_dash_wrapper, .profile_courser_wrapper {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .address_item {
+        width: calc(50% - 12px);
+    }
+
+    .checkout_form .cls__form_inner{
+        width: calc(50% - 12px);
     }
 }
 
@@ -108,7 +116,7 @@
     }
 
     .cls__footer_wrapper {
-        grid-template-columns: repeat(4, auto);
+        grid-template-columns: repeat(4, 1fr);
     }
 
     .cls__trending_wrapper{
@@ -158,6 +166,11 @@
     .profile_dash_wrapper, .profile_courser_wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .cls__header_logo{
+        width: 110px;
+    }
+    
 }
 
 /* 1024 */
@@ -248,11 +261,23 @@
         width: calc(100% - 320px);
         padding: 30px 20px;
     }
-    
+
     .nav-pills .nav-link {
         border-radius: 0px !important;
         width: 100%;
         text-align: left;
+    }
+
+    .checkout_wrapper{
+        flex-direction: row;
+    }
+    
+    .checkout_form {
+        width: 60%;
+    }
+    
+    .checkout_right{
+        width: 40%;
     }
 }
 
@@ -274,7 +299,7 @@
     }
 
     .cls__footer_wrapper {
-        grid-template-columns: repeat(5, auto);
+        grid-template-columns: repeat(5, 1fr);
     }
     .cls__footer_content{
         background-image: url(../image/footer/Footer-Tangier1.jpg);
@@ -293,5 +318,9 @@
     
     .cls__filter_content {
         width: calc(100% - 424px);
+    }
+
+    .address_item {
+        width: calc(33.33% - 16px);
     }
 }

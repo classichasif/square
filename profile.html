@@ -1038,7 +1038,7 @@
         
                                         <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" aria-selected="false" role="tab" tabindex="-1">Address</button>
         
-                                        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" aria-selected="false" role="tab" tabindex="-1">Wishlist</button>
+                                        <a href="./wishlist.html" class="nav-link">Wishlist</a>
         
                                         <button class="profle_logout">Logout</button>
         
@@ -1049,28 +1049,28 @@
                                         <!-- first tab -->
                                         <div class="tab-pane fade active show" id="v-pills-home" role="tabpanel" aria-labelledby="#v-pills-home-tab">
                                             <div class="profile_dash">
-                                                <div class="profile_details_title">ড্যাশবোর্ড</div>
+                                                <div class="profile_details_title">Dashboard</div>
                                                 <div class="profile_dash_wrapper">
                                                     <!-- item -->
                                                     <div class="profile_dash_item">
-                                                        <div class="profile_dash_item_icon"><i class="fa-solid fa-book"></i>
+                                                        <div class="profile_dash_item_icon"><i class="fa-solid fa-dumpster-fire"></i>
                                                         </div>
                                                         <div class="profile_dash_item_number">0</div>
-                                                        <div class="profile_dash_item_title">এনরোল কোর্স </div>
+                                                        <div class="profile_dash_item_title">TOTAL ORDER</div>
                                                     </div>
                                                     <!-- item -->
                                                     <div class="profile_dash_item">
-                                                        <div class="profile_dash_item_icon"><i class="fa-solid fa-graduation-cap"></i>
+                                                        <div class="profile_dash_item_icon"><i class="fa-solid fa-loader"></i>
                                                         </div>
                                                         <div class="profile_dash_item_number">0</div>
-                                                        <div class="profile_dash_item_title">কমপ্লিট কোর্স </div>
+                                                        <div class="profile_dash_item_title">PENDING ORDER</div>
                                                     </div>
                                                     <!-- item -->
                                                     <div class="profile_dash_item">
-                                                        <div class="profile_dash_item_icon"><i class="fa-solid fa-trophy"></i>
+                                                        <div class="profile_dash_item_icon"><i class="fa-solid fa-check"></i>
                                                         </div>
                                                         <div class="profile_dash_item_number">0</div>
-                                                        <div class="profile_dash_item_title">একটিভ কোর্স </div>
+                                                        <div class="profile_dash_item_title">COMPLETED ORDER</div>
                                                     </div>
         
                                                 </div>
@@ -1078,78 +1078,105 @@
                                         </div>
         
                                         <!-- second tab -->
-        
                                         <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="#v-pills-profile-tab">
                                             <div class="profile_details">
                                                 <div class="profile_details_content">
-                                                    <div class="profile_details_title">আমার প্রোফাইল </div>
-        
-                                                    <table class="profle_table">
-                                                        <tbody>
-        
-                                                            <tr>
-                                                                <td>রেজিস্ট্রেশন তারিখ </td>
-                                                                <td>২৪-১০-২২</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>ফার্স্ট নাম</td>
-                                                                <td>হাসিফুল </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>লাস্ট নাম </td>
-                                                                <td>মোল্লা</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>ইউসার নাম</td>
-                                                                <td>হাসিফ</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>ইমেইল </td>
-                                                                <td>hasifulislam32@gmail.com</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>ফোন নম্বর </td>
-                                                                <td>০১৭২৩৫০৭৯৮৯</td>
-                                                            </tr>
-        
-                                                        </tbody>
-                                                    </table>
+                                                    <div class="profile_details_title">Address</div>
+                                                    <!-- profile address -->
+                                                    <div class="profile_adress">
+                                                        <!-- adress -->
+                                                        <div class="profile_adress_wrapper">
+                                                            <!-- item -->
+                                                            <div class="address_item">
+                                                                <!-- title -->
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <!-- item -->
+                                                                    <div class="adress_item_title">Address 1</div>
+                                                                    <!-- button -->
+                                                                    <div class="address_btn">
+                                                                        <button class="cls__btn" data-bs-target="#address_modal" data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i></button>
+                                                                        <button class="cls__btn"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="adress_item_text">House #30(Level-3),Road #3/D, Sector #9,Uttara,Dhaka-1230,Bangladesh</p>
+                                                            </div>
+                                                            <!-- item -->
+                                                            <div class="address_item">
+                                                                <!-- title -->
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <!-- item -->
+                                                                    <div class="adress_item_title">Address 2</div>
+                                                                    <!-- button -->
+                                                                    <div class="address_btn">
+                                                                        <button class="cls__btn" data-bs-target="#address_modal" data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i></button>
+                                                                        <button class="cls__btn"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="adress_item_text">House #30(Level-3),Road #3/D, Sector #9,Uttara,Dhaka-1230,Bangladesh</p>
+                                                            </div>
+                                                            <!-- item -->
+                                                            <div class="address_item">
+                                                                <!-- title -->
+                                                                <div class="d-flex justify-content-between align-items-center">
+                                                                    <!-- item -->
+                                                                    <div class="adress_item_title">Address 3</div>
+                                                                    <!-- button -->
+                                                                    <div class="address_btn">
+                                                                        <button class="cls__btn" data-bs-target="#address_modal" data-bs-toggle="modal"><i class="fa-solid fa-pen-to-square"></i></button>
+                                                                        <button class="cls__btn"><i class="fa-sharp fa-solid fa-trash"></i></button>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="adress_item_text">House #30(Level-3),Road #3/D, Sector #9,Uttara,Dhaka-1230,Bangladesh</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- adddress add button -->
+                                                        <div class="add_adress">
+                                                            <!-- btn -->
+                                                            <button class="cls__btn add_adress_btn" data-bs-target="#address_modal" data-bs-toggle="modal">Add Adress</button>
+                                                            <!-- adress modal -->
+                                                            <div class="modal fade" id="address_modal">
+                                                                <div class="modal-dialog">
+                                                                    <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                            <p class="modal-title">Create New Address</p>
+                                                                            <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <!-- form -->
+                                                                            <form action="" class="adress_form">
+                                                                                <!-- inner -->
+                                                                                <div class="cls__form_inner">
+                                                                                    <label for="">Address</label>
+                                                                                    <input type="email" class="cls__input cls__form_input">
+                                                                                </div>
+                                                                                <!-- inner -->
+                                                                                <div class="cls__form_inner">
+                                                                                    <label for="">City</label>
+                                                                                    <input type="email" class="cls__input cls__form_input">
+                                                                                </div>
+                                                                                <!-- inner -->
+                                                                                <div class="cls__form_inner">
+                                                                                    <label for="">Country</label>
+                                                                                    <input type="email" class="cls__input cls__form_input">
+                                                                                </div>
+                                                                                <!-- inner -->
+                                                                                <div class="cls__form_inner">
+                                                                                    <label for="">Postal/Zip Code</label>
+                                                                                    <input type="email" class="cls__input cls__form_input">
+                                                                                </div>
+                                                                                <div class="cls__form_submit text-center">
+                                                                                    <button type="submit" class="cls__btn">Address</button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-        
-                                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="#v-pills-messages-tab">
-                                            <div class="profile_courser">
-                                                <div class="profile_courser_wrapper">
-        
-                                                    <!-- item -->
-                                                    <div class="profile_courser_item">
-                                                        <div class="profile_courser_item_thumbnail">
-                                                            <img src="assets/image/card/course_1662552115.jpg" alt="">
-                                                        </div>
-                                                        <div class="profile_courser_item_title">ইউআই ইউএক্স ডিজাইন</div>
-                                                    </div>
-        
-                                                    <!-- item -->
-                                                    <div class="profile_courser_item">
-                                                        <div class="profile_courser_item_thumbnail">
-                                                            <img src="assets/image/card/course_1662552115.jpg" alt="">
-                                                        </div>
-                                                        <div class="profile_courser_item_title">ইউআই ইউএক্স ডিজাইন</div>
-                                                    </div>
-        
-                                                    <!-- item -->
-                                                    <div class="profile_courser_item">
-                                                        <div class="profile_courser_item_thumbnail">
-                                                            <img src="assets/image/card/course_1662552115.jpg" alt="">
-                                                        </div>
-                                                        <div class="profile_courser_item_title">ইউআই ইউএক্স ডিজাইন</div>
-                                                    </div>
-        
-                                                </div>
-                                            </div>
-                                        </div>
-        
                                     </div>
         
                                 </div>
@@ -1162,6 +1189,7 @@
             </div>
         </main>
         <!-- main end -->
+
 
         <!-- footer section -->
         <footer class="cls__footer_section">
@@ -1190,37 +1218,15 @@
                     <div class="cls__footer_wrapper">
                         <!-- item -->
                         <div class="cls__footer_item">
-                            <h5 class="cls__footer_navtitle">CONNECT</h5>
-                            <ul class="cls__footer_nav">
-                                <li>
-                                    <a href="mailto:square@gmail.com">
-                                        <span class="cls__footer_icon"><i class="fa-sharp fa-solid fa-envelope"></i></span>
-                                        <span class="cls__footer_text">square@gmail.com</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="tel:+91 7669303665">
-                                        <span class="cls__footer_icon"><i class="fa-brands fa-whatsapp"></i></span>
-                                        <span class="cls__footer_text">+91 7669303665</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
-                                        <span class="cls__footer_text">Uttora Sector 9, Road No 3/D, House No 30</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Monday - Saturday</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">9:30 am - 5:30 pm IST</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <!-- logo  -->
+                            <div class="logo">
+                                <a href="">
+                                    <img src="assets/image/tatighar/Tateeghar Logo-png.png" alt="">
+                                </a>
+                            </div>
+
+                            <p class="footer_about_text">There is no specific reason to shop sarees or wear sarees or gift sarees. And when sarees are just so beautiful, you don't really need an excuse to get yourself some new collection. 
+                            </p>
 
                             <!-- social icons -->
                             <div class="cls__footer_social">
@@ -1239,16 +1245,52 @@
                         </div>
                         <!-- item -->
                         <div class="cls__footer_item">
-                            <h5 class="cls__footer_navtitle">ABOUT US</h5>
+                            <h5 class="cls__footer_navtitle">Account</h5>
                             <ul class="cls__footer_nav">
                                 <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Press</span>
+                                    <a href="./profile.html">
+                                        <span class="cls__footer_text">My Profile</span>
                                     </a>
                                 </li>
                                 <li>
+                                    <a href="./cart.html">
+                                        <span class="cls__footer_text">Cart</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./wishlist.html">
+                                        <span class="cls__footer_text">Wishlist</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="cls__footer_text">Sitemap</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- item -->
+                        <div class="cls__footer_item">
+                            <h5 class="cls__footer_navtitle">Category</h5>
+                            <ul class="cls__footer_nav">
+                                <li>
                                     <a href="./filter.html">
-                                        <span class="cls__footer_text">Career</span>
+                                        <span class="cls__footer_text">Cotton</span>
+                                    </a>
+                                    <a href="./filter.html">
+                                        <span class="cls__footer_text">Halfsilk</span>
+                                    </a>
+                                    <a href="./filter.html">
+                                        <span class="cls__footer_text">Katan</span>
+                                    </a>
+                                    <a href="./filter.html">
+                                        <span class="cls__footer_text">Motka</span>
+                                    </a>
+                                    <a href="./filter.html">
+                                        <span class="cls__footer_text">Pure Silk</span>
+                                    </a>
+                                    <a href="./filter.html">
+                                        <span class="cls__footer_text">Muslin</span>
                                     </a>
                                 </li>
                             </ul>
@@ -1258,121 +1300,35 @@
                             <h5 class="cls__footer_navtitle">SERVICES</h5>
                             <ul class="cls__footer_nav">
                                 <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Cerise Program</span>
+                                    <a href="">
+                                        <span class="cls__footer_text">Privacy Policy</span>
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Shop & Cafe Locator</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Shop Experience</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Corporate Gifting</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Gift Card</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Activate Gift Card</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Good Earth Registry</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text"></span>
+                                    <a href="">
+                                        <span class="cls__footer_text">Refund Policy</span>
                                     </a>
                                 </li>
                             </ul>
                         </div>
                         <!-- item -->
                         <div class="cls__footer_item">
-                            <h5 class="cls__footer_navtitle">SERVICES</h5>
+                            <h5 class="cls__footer_navtitle">CONNECT</h5>
                             <ul class="cls__footer_nav">
                                 <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Cerise Program</span>
+                                    <a href="mailto:square@gmail.com">
+                                        <span class="cls__footer_icon"><i class="fa-sharp fa-solid fa-envelope"></i></span>
+                                        <span class="cls__footer_text">square@gmail.com</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:+91 7669303665">
+                                        <span class="cls__footer_icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                        <span class="cls__footer_text">+91 7669303665</span>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="./filter.html">
-                                        <span class="cls__footer_text">Shop & Cafe Locator</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Shop Experience</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Corporate Gifting</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Gift Card</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Activate Gift Card</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Good Earth Registry</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text"></span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- item -->
-                        <div class="cls__footer_item">
-                            <h5 class="cls__footer_navtitle">HELP</h5>
-                            <ul class="cls__footer_nav">
-                                
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Safety Measures</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Shipping & Payment</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Track Order</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Return & Exchanges</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./filter.html">
-                                        <span class="cls__footer_text">Terms Of Use</span>
+                                        <span class="cls__footer_icon"><i class="fa-sharp fa-solid fa-location-dot"></i></span>
+                                        <span class="cls__footer_text">PINK CITY, Shop No.- 52-53 Ground Floor, Road No.-103, Plot- 15, Block: CEN(c) Gulshan 2, Dhaka, Bangladesh</span>
                                     </a>
                                 </li>
                             </ul>

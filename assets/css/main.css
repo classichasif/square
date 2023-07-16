@@ -34,8 +34,8 @@
     padding: 5px 0px;
 }
 
-.cls__header_logo{
-    width: 110px;
+.cls__header_logo {
+    width: 80px;
 }
 
 .cls__nav{
@@ -331,7 +331,7 @@
 .cls__cartmenu_header {
     color: #fff;
     padding: 0px 20px;
-    background-color: #4c4c4c;
+    background-color: var(--primary-color);
     height: 56px;
     display: flex;
     align-items: center;
@@ -1352,12 +1352,12 @@
     color: #696969;
 }
 
-.modal-dialog{
+.cls__filter_body .modal-dialog{
     max-width: 1040px;
     width: 100%;
 }
 
-.modal-content {
+.cls__filter_body .modal-content {
     height: 768px;
     border-radius: 0px;
 }
@@ -1863,10 +1863,15 @@
     line-height: 18px;
 }
 
-.cls__form_input {
+.cls__form_input,
+.cls__form_textarea {
     background: transparent;
     border: 1px solid rgb(24 23 23 / 40%);
     height: 40px;
+}
+
+.cls__form_textarea{
+    height: 100px;
 }
 
 .cls__form_submit button{
@@ -1968,20 +1973,21 @@
     padding: 30px 20px;
     text-align: center;
     background-color: #fff;
-    border: 1px solid rgb(109 40 217 / 10%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
 }
 
 .profile_dash_item_icon {
     height: 50px;
     width: 50px;
-    background-color: rgb(109 40 217 / 10%);
+    background-color: #ededed;
     border-radius: 50%;
     display: grid;
     place-content: center;
     font-size: 24px;
     color: var(--text-color);
     margin: 0px auto 20px;
+    border: 1px solid #b3b3b3;
 }
 
 .profile_dash_item_number,
@@ -1992,12 +1998,12 @@
     color: var(--primary-color);
     margin-bottom: 15px;
 }
-
 .profile_dash_item_title {
     margin-bottom: 0px;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 600;
+    color: var(--text-color);
 }
 
 .profile_details_title {
@@ -2025,16 +2031,137 @@
     font-weight: 400;
 }
 
-.profile_courser_item {
-    border-radius: 10px;
-    overflow: hidden;
-    background-color: rgb(109 40 217 / 10%);
+.profile_adress_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
-.profile_courser_item_title {
+.address_item {
+    width: 100%;
     padding: 20px;
-    font-size: 18px;
-    line-height: 28px;
-    color: var(--primary);
-    font-weight: 600;
+    box-shadow: 0px 5px 30px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    border: 1px solid var(--primary-color);
+}
+
+.adress_item_title {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.adress_item_text {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.address_btn {
+    display: flex;
+    gap: 6px;
+}
+
+.address_btn button {
+    height: 25px;
+    width: 25px;
+    display: grid;
+    place-content: center;
+    background-color: #d0d0d0;
+    border-radius: 4px;
+    font-size: 14px;
+    color: var(--primary-color);
+}
+
+.add_adress{
+    margin-top: 20px;
+}
+
+.add_adress_btn{
+    display: inline-block;
+    padding: 7px 20px;
+    background: var(--primary-color);
+    color: var(--global-color);
+    border-radius: 6px;
+}
+
+.checkout_title {
+    font-size: 32px;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.checkout_wrapper{
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.checkout_form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0 24px;
+    flex-wrap: wrap;
+}
+
+.checkout_right{
+    width: 100%;
+}
+
+.checkout_form .cls__form_inner{
+    width: 100%;
+}
+
+.checkout_form .cls__form_inner:last-child{
+    width: 100%;
+}
+
+.checkout_right .order_sumury{
+    max-width: 100%;
+}
+
+.payment_wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.payment_item{
+    cursor: pointer;
+    width: 100%;
+}
+
+.payment_item input {
+    appearance: none;
+}
+
+.payment_item input:checked ~ .payment_image img{
+    border: 2px solid var(--primary-color);
+    border-radius: 12px;
+}
+
+.order_btn{
+    padding: 9px 25px;
+    color: var(--global-color);
+    background: var(--primary-color);
+    font-weight: 500;
+}
+
+.footer_about_text{
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.50px;
+    color: var(--global-color);
+}
+
+.logo{
+    width: 120px;
+    margin-bottom: 20px;
 }
