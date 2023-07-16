@@ -1,4 +1,4 @@
-.cls__header_top{
+.cls__header_top {
     display: flex;
     justify-content: center;
     height: 40px;
@@ -6,7 +6,7 @@
     padding: 14px 31px 14px 31px;
     z-index: 1;
     position: relative;
-    background: #A17C48;
+    background: var(--primary-color);
 }
 
 .header_top_text {

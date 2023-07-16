@@ -31,7 +31,7 @@ hr {
 }
 
 :root{
-    --main-color: #336c5e;
+    --main-color: #9E2E56;
     --text-color: #191919;
     --primary-color: #9E2E56;
     --global-color: #FFFFFF;
@@ -89,7 +89,7 @@ img{
     content: "\f053";
     display: grid;
     place-content: center;
-    background: var(--main-color);
+    background: var(--primary-color);
 }
 
 .slick-next::after {
