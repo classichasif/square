@@ -232,7 +232,7 @@ window.addEventListener('scroll', function () {
 $(document).ready(function (e) {
     $(".cls__banner_wrapper").slick({
       dots: false,
-      autoplay: true,
+      autoplay: false,
       arrows: true,
       infinite: true,
       slidesToShow: 1,

@@ -547,7 +547,6 @@
 }
 
 .cls__trending_wrapper{
-    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
     display: grid;
@@ -555,12 +554,13 @@
     gap: 24px;
 }
 
-.cls__trending_first_item{
-    position: relative;
-}
-
 .cls__trending_item{
     position: relative;
+    max-height: 964px;
+}
+
+.cls__trending_item:not(:first-child){
+    max-height: 470px;
 }
 
 .cls__trending_item_image {
