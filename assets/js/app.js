@@ -1,3 +1,16 @@
+
+//   socket year
+let socketYear = document.getElementById("socket_year")
+
+let PresentYear = (year) =>{
+  let date = new Date()
+  let PreYear = date.getFullYear()
+  year.innerText = PreYear
+}
+
+PresentYear(socketYear)
+
+// stciky year
 var header = document.getElementsByClassName("cls__main_header")[0];
 var sticky = header.offsetTop;
 
@@ -9,6 +22,28 @@ window.addEventListener('scroll', function () {
         header.classList.remove("sticky");
     }
 });
+
+// header nav
+
+let clsNav = document.querySelector(".cls__nav")
+let toggle = document.getElementById("toggle")
+let navCross = document.querySelector(".nav_cross")
+
+toggle.addEventListener("click", function(){
+  clsNav.style.left = "0px"
+})
+
+navCross.addEventListener("click", function(){
+  clsNav.style.left = "-100%"
+})
+
+window.addEventListener("click", (e) => {
+  let eTarget = e.target;
+  if (!eTarget.closest(".cls__nav") && !eTarget.closest("#toggle")) {
+    clsNav.style.left = "-100%"
+  }
+});
+
 
 
 (() => {
@@ -148,86 +183,6 @@ window.addEventListener('scroll', function () {
 
 })();
 
-(function($) {
-  var $main_nav = $('#main-nav');
-  var $toggle = $('.toggle');
-
-  var defaultData = {
-    maxWidth: false,
-    customToggle: $toggle,
-    navTitle: 'All Categories',
-    levelTitles: true,
-    pushContent: '#container',
-    insertClose: 2,
-    closeLevels: false
-  };
-
-  // add new items to original nav
-  $main_nav.find('li.add').children('a').on('click', function() {
-    var $this = $(this);
-    var $li = $this.parent();
-    var items = eval('(' + $this.attr('data-add') + ')');
-
-    $li.before('<li class="new"><a>'+items[0]+'</a></li>');
-
-    items.shift();
-
-    if (!items.length) {
-      $li.remove();
-    }
-    else {
-      $this.attr('data-add', JSON.stringify(items));
-    }
-
-    Nav.update(true);
-  });
-
-  // call our plugin
-  var Nav = $main_nav.hcOffcanvasNav(defaultData);
-
-  // demo settings update
-
-  const update = (settings) => {
-    if (Nav.isOpen()) {
-      Nav.on('close.once', function() {
-        Nav.update(settings);
-        Nav.open();
-      });
-
-      Nav.close();
-    }
-    else {
-      Nav.update(settings);
-    }
-  };
-  
-  $('.actions').find('a').on('click', function(e) {
-    e.preventDefault();
-
-    var $this = $(this).addClass('active');
-    var $siblings = $this.parent().siblings().children('a').removeClass('active');
-    var settings = eval('(' + $this.data('demo') + ')');
-
-    update(settings);
-  });
-
-  $('.actions').find('input').on('change', function() {
-    var $this = $(this);
-    var settings = eval('(' + $this.data('demo') + ')');
-
-    if ($this.is(':checked')) {
-      update(settings);
-    }
-    else {
-      var removeData = {};
-      $.each(settings, function(index, value) {
-        removeData[index] = false;
-      });
-
-      update(removeData);
-    }
-  });
-})(jQuery);
 
 $(document).ready(function (e) {
     $(".cls__banner_wrapper").slick({

@@ -301,9 +301,6 @@
     .cls__footer_wrapper {
         grid-template-columns: repeat(5, 1fr);
     }
-    .cls__footer_content{
-        background-image: url(../image/footer/Footer-Tangier1.jpg);
-    }
 
     .cls__filter_side{
         width: 400px;
